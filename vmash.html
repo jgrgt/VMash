@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>VMash</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>Testje</h1>
+		<video id="vid" src="mozilla.ogg" controls="" >
+		    <p>Your browser does not support video</p>
+		</video>
+		<a id="jumplink" href="#jump">Jump!</a>
+
+		<script type="text/javascript">
+			 $(document).ready(function() {
+			   // do stuff when DOM is ready
+			   $("h1").text("woot");
+			   $("#jumplink").click(function() {
+				   $("#vid").attr("currentTime", 30);
+				   });
+			 });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+Clip is splittable, draggable, 
+class Clip:
+    name
+    from
+    to
+    origin
+    origin_from
+    origin_to
+    def split(self, time):
+        # Return 2 new clips
